@@ -7,17 +7,15 @@
 }
 
 :root {
+  --min-font-size: 13px;
+  --max-font-size: 39px;
   --base-font-size: 3vh;
 }
 
-[id$="-font"] {
-  background-color: antiquewhite;
-  width: 200px;
-  height: 50px;
-}
-
 html {
-  font-size: clamp(13px, var(--base-font-size), 39px);
+  font-size: clamp(var(--min-font-size),
+      var(--base-font-size),
+      var(--max-font-size));
 }
 
 body {
@@ -93,4 +91,10 @@ table {
 /* 개발용 아웃라인 (배포시 주석처리) */
 :hover {
   outline: 2px solid dodgerblue;
+}
+
+button[id$="-font"] {
+  background-color: antiquewhite;
+  width: 200px;
+  height: 50px;
 }
