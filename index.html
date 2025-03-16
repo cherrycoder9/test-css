@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML 태그 테스트</title>
+  <link rel="stylesheet" href="test.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <button id="decrease-font">-</button>
+  <button id="increase-font">+</button>
+  <!-- 기본 텍스트 태그 -->
+  <h1>제목 1</h1>
+  <h2>제목 2</h2>
+  <h3>제목 3</h3>
+  <h4>제목 4</h4>
+  <h5>제목 5</h5>
+  <h6>제목 6</h6>
+  <p>이것은 단락입니다. 텍스트를 넣어보세요.</p>
+  <strong>강조 텍스트</strong>와 <em>기울임 텍스트</em>
+
+  <!-- 리스트 -->
+  <ul>
+    <li>아이템 1</li>
+    <li>아이템 2</li>
+    <li>아이템 3</li>
+  </ul>
+  <ol>
+    <li>첫 번째</li>
+    <li>두 번째</li>
+    <li>세 번째</li>
+  </ol>
+
+  <!-- 멀티미디어 태그 -->
+  <video controls width="300">
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    비디오를 지원하지 않습니다.
+  </video>
+  <audio controls>
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+    오디오를 지원하지 않습니다.
+  </audio>
+  <img src="https://www.collinsdictionary.com/images/full/apple_158989157.jpg" alt="샘플 이미지" width="300">
+
+  <!-- 그래픽 태그 -->
+  <canvas width="200" height="100"></canvas>
+  <svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" fill="blue" />
+  </svg>
+
+  <!-- 링크와 iframe -->
+  <a href="https://www.iana.org/help/example-domains">링크</a>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/cREYlE8g8wA?si=ghzU9MxXzMjqTgbf"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <!-- 인용문과 코드 -->
+  <blockquote>이것은 인용문입니다.</blockquote>
+  <code>console.log("안녕!");</code>
+  <pre>이 텍스트는
+형식을 유지합니다.</pre>
+
+  <!-- 기타 유용한 태그 -->
+  <hr>
+  <br>
+  <sup>위첨자</sup> <sub>아래첨자</sub>
+  <abbr title="HyperText Markup Language">HTML</abbr>
+  <time>2023-10-01</time>
+  <details>
+    <summary>더 보기</summary>
+    <p>숨겨진 내용입니다.</p>
+  </details>
+</body>
+
+</html>

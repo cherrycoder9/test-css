@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --base-font-size: 3vh;
+}
+
+[id$="-font"] {
+  background-color: antiquewhite;
+  width: 200px;
+  height: 50px;
+}
+
+html {
+  font-size: clamp(13px, var(--base-font-size), 39px);
+}
+
+body {
+  /* 브라우저 기본 폰트를 쓰기 위해 주석 처리함 */
+  /* font-family: 'YourFont', sans-serif; */
+  /* font-size: 3vh; */
+  line-height: 1.5;
+  user-select: none;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  border: 0;
+  background-color: transparent;
+  font-family: inherit;
+  color: inherit;
+  appearance: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 개발용 아웃라인 (배포시 주석처리) */
+:hover {
+  outline: 2px solid dodgerblue;
+}
